@@ -8,9 +8,16 @@ function exibirTexto(tag, texto) {
     campo.innerHTML = texto; //Insira no HTML;
 }
 exibirTexto('h1','Jogo de Adivinhação')
-exibirTexto('p','Escolha um número entre 1 e 10...')
+exibirTexto('p','Escolha um número entre 1 e 100...')
+
+function gerarNumeroAleatorio() {
+    return parseInt(Math.random() * 100) + 1
+}
+let numeroSecreto = gerarNumeroAleatorio()
+console.log(numeroSecreto)
 
 function verificarChute(){
-    console.log('Apertou o botãozinho né?!')
+    let chute = parseInt(document.querySelector('input').value);
+    console.log(chute === numeroSecreto);
     
 }
