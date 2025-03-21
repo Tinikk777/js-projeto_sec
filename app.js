@@ -21,4 +21,3 @@ function verificarChute(){
     console.log(chute === numeroSecreto);
     
 }
-dsfgnsadklf
